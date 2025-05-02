@@ -4,16 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Mis 15 Violeta</title>
 </head>
 <body>
-    <div class="tarjeta">
+    <section class="tarjeta">
         <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.89/build/spline-viewer.js"></script>
         <spline-viewer url="https://prod.spline.design/5TgypSWhMxiegv-Q/scene.splinecode"></spline-viewer>
+    </section>
+    <section class="imagen">
+        <p>Frase que eligan con foto detras</p>
+    </section>
+    <section class="ubicacion">
+        <div id="ubiimg">
+            <img src="resources/ubicacion.png" id="ubi">
+        </div>
+        <div class="textoUbi">
+            <p id="bold">Deportivo libertad de Sunchales</p>
+            <p id="bold">Salon Rodo Maretto</p>
+            <p>direccion</p>
+            <p id="bold">20:00 hs</p>
+        </div>
+        <button>VER UBICACION</button>
+        <div class="imgSalon">
 
-        
-    </div>
-        
+        </div>
+    </section>
+    <section class="confirmacion">
+        <p id="bold">Confirmacion</p>
+        <div class="textoConfir">
+            <p>Valor de la tajeta:$20000</p>
+            <p>Menores:$10000</p>
+            <p>Alias:Prueba1</p>
+        </div>
+        <input type="text" placeholder="Nombre y Apellido" class="rellenar">
+        <button>Enviar</button>
+    </section>
+    
 
 </body>
 </html>

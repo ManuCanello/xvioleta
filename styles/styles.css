@@ -16,7 +16,7 @@ section{
 
 .tarjeta{
     
-    height:90vh;
+    height:80vh;
     overflow: hidden;
 }
 
@@ -186,6 +186,7 @@ section{
     font-weight: bold;
     margin-top: 10px;
   }
+
 
     
     

@@ -185,3 +185,13 @@ section{
     font-weight: bold;
     margin-top: 10px;
   }
+
+    
+    spline-viewer {
+        touch-action: none;
+        pointer-events: none;
+    }
+    
+    .tarjeta:active spline-viewer {
+        pointer-events: auto;
+    }

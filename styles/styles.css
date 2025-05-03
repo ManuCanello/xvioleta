@@ -186,27 +186,6 @@ section{
     margin-top: 10px;
   }
 
-    .spline-wrapper {
-  position: relative;
-  height: 90vh;
-}
-
-#spline {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  pointer-events: auto; /* se controla por JS */
-}
-
-.scroll-zone {
-  position: absolute;
-  bottom: 0;
-  height: 10vh;
-  width: 100%;
-  z-index: 10;
-  pointer-events: none; /* permite scroll */
-}
+    
     
   

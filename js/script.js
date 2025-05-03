@@ -25,10 +25,10 @@ const wpp = document.getElementById("enviar");
 wpp.addEventListener("click",mandarWpp.bind(null));
 
 function mandarWpp(){
-  const numero = '543492338341';
-  let mensaje = "hola soy " + document.getElementById("nombre").value;
-  const url = 'https://wa.me/${numero}?text=${mensaje}';
-  window.open(url, '_blank')
+  const numero = '543492649064';
+  const mensaje = 'Hola, este es un mensaje de prueba';
+  const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+  window.open(url, '_blank');
 }
 
 

@@ -1,6 +1,6 @@
 body{
     width: 100vw;
-    height: 500vh;
+    
     margin-top: 0;
     margin-left: 0;
     display: flex;
@@ -11,6 +11,8 @@ body{
 section{
     width: 100vw;
 }
+
+
 
 .tarjeta{
     width: 100vw;
@@ -76,8 +78,9 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: brown;
-    height: 50vh;
+    justify-content: center;
+    background-color: rgb(179, 235, 242);
+    height: 40vh;
 }
 
 
@@ -91,16 +94,33 @@ section{
 
 .textoConfir p{
     margin-top: 0;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 
 .rellenar{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     border-style: none;
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 50px;
     padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Fredoka';
+}
+
+.faltan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#enviar{
+    height: 25px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Fredoka';
+    font-weight: 500;
 }
 
 
@@ -116,3 +136,46 @@ section{
 #bold{
     font-weight: bold;
 }
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 20px;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+  }
+  
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .polaroid {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    padding: 10px;
+    width: 250px;
+    transform: rotate(-2deg);
+    transition: transform 0.3s ease;
+  }
+  
+  .polaroid:hover {
+    transform: rotate(0deg) scale(1.05);
+  }
+  
+  .polaroid img {
+    width: 100%;
+    height: 300px;
+    display: block;
+  }
+  
+  .caption {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+  }

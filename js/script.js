@@ -31,28 +31,6 @@ function mandarWpp(){
   window.open(url, '_blank');
 }
 
-const spline = document.getElementById('spline');
-let touchingSpline = false;
 
-spline.addEventListener('touchstart', () => {
-  touchingSpline = true;
-  spline.style.pointerEvents = 'auto';
-});
-
-document.addEventListener('touchend', () => {
-  if (touchingSpline) {
-    spline.style.pointerEvents = 'none';
-    touchingSpline = false;
-  }
-});
-
-// Para usuarios con mouse (opcional)
-spline.addEventListener('mousedown', () => {
-  spline.style.pointerEvents = 'auto';
-});
-
-document.addEventListener('mouseup', () => {
-  spline.style.pointerEvents = 'none';
-});
 
 

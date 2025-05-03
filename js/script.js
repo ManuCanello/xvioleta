@@ -31,6 +31,25 @@ function mandarWpp(){
   window.open(url, '_blank');
 }
 
+const spline = document.getElementById('spline');
 
+spline.addEventListener('pointerdown', () => {
+  document.body.style.overflow = 'hidden'; // Desactiva scroll
+});
+
+spline.addEventListener('pointerup', () => {
+  document.body.style.overflow = 'auto'; // Reactiva scroll
+});
+
+// Por si el usuario mueve el dedo fuera del área y suelta ahí
+spline.addEventListener('pointercancel', () => {
+  document.body.style.overflow = 'auto';
+});
+
+spline.addEventListener('touchmove', (e) => {
+  if (document.body.style.overflow === 'hidden') {
+    e.preventDefault();
+  }
+}, { passive: false });
 
 

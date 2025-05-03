@@ -26,7 +26,7 @@ wpp.addEventListener("click",mandarWpp.bind(null));
 
 function mandarWpp(){
   const numero = '543492649064';
-  const mensaje = 'Hola, soy '+document.getElementById("nombre").value; + ' y confirmo mi asistencia para el 15 de Violeta';
+  const mensaje = 'Hola, soy '+document.getElementById("nombre").value + ' y confirmo mi asistencia para el 15 de Violeta';
   const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
   window.open(url, '_blank');
 }

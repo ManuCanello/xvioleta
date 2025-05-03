@@ -187,11 +187,7 @@ section{
   }
 
     
-    spline-viewer {
-        touch-action: none;
-        pointer-events: none;
-    }
     
-    .tarjeta:active spline-viewer {
-        pointer-events: auto;
+    #spline {
+        pointer-events: none;
     }

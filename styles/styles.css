@@ -68,9 +68,10 @@ section{
 
 .imgSalon{
     height: 200px;
-    width: 250px;
+    width: 300px;
     background-color: black;
-    border-radius: 5%;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .confirmacion{
@@ -80,10 +81,13 @@ section{
     align-items: center;
     justify-content: center;
     background-color: rgb(179, 235, 242);
-    height: 40vh;
+    height: 60vh;
 }
 
-
+.con{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
 
 .textoConfir{
     display: flex;
@@ -95,17 +99,19 @@ section{
 .textoConfir p{
     margin-top: 0;
     margin-bottom: 2px;
+    font-size: 15px;
 }
 
 .rellenar{
     margin-bottom: 15px;
     border-style: none;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-radius: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 120x;
     font-family: 'Fredoka';
+    width: 30vw;
 }
 
 .faltan{
@@ -160,7 +166,7 @@ section{
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     padding: 10px;
     width: 250px;
-    transform: rotate(-2deg);
+    
     transition: transform 0.3s ease;
   }
   

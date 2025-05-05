@@ -1,22 +1,24 @@
 body{
     width: 100vw;
-    
     margin-top: 0;
     margin-left: 0;
     display: flex;
     flex-direction: column;
     font-family: 'Fredoka';
+    background-color: black;
 }
 
 section{
     width: 100vw;
 }
 
-
+main{
+    background-color: black;
+}
 
 .tarjeta{
     width: 100vw;
-    height:90vh;
+    height: 80vh;
     
 }
 
@@ -31,12 +33,12 @@ section{
 }
 
 .ubicacion{
-    height: 100vh;
-    background-color: white;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    color: #e5e4e2;
+    margin-bottom: 40px;
 }
 
 .ubicacion button{
@@ -44,7 +46,7 @@ section{
     width: 150px;
     border: none;
     border-radius: 5px;
-    background-color: rgb(179, 235, 242);
+    background-color: #e5e4e2;
     font-family: 'Fredoka';
     font-weight: 500;
     margin-bottom: 20px;
@@ -70,23 +72,23 @@ section{
 .imgSalon{
     height: 200px;
     width: 300px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .confirmacion{
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: white;
     height: 60vh;
+    color: #e5e4e2;
 }
 
 .con{
-    font-size: 50px;
+    font-size: 45px;
     margin-bottom: 20px;
 }
 
@@ -94,17 +96,17 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .textoConfir p{
     margin-top: 0;
     margin-bottom: 2px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .rellenar{
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     border-style: none;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -112,20 +114,22 @@ section{
     padding-left: 20px;
     padding-right: 120x;
     font-family: 'Fredoka';
-    width: 300px;
+    width: 150px;
 }
 
 .faltan{
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #e5e4e2;
+    font-size: 20px;
 }
 
 #enviar{
-    height: 50px;
+    height: 30px;
     width: 125px;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     font-family: 'Fredoka';
     font-weight: 500;
 }

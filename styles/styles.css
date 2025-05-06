@@ -73,7 +73,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .textoUbi p{
@@ -102,6 +102,7 @@ main{
 .con{
     font-size: 45px;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .textoConfir{
@@ -156,7 +157,7 @@ main{
     height: 100px;
 }
 
-#bold{
+.bold{
     font-weight: bold;
 }
 
@@ -171,11 +172,11 @@ main{
     max-width: 800px;
   }
   
-  .carousel::-webkit-scrollbar {
+.carousel::-webkit-scrollbar {
     display: none;
   }
   
-  .polaroid {
+.polaroid {
     flex: 0 0 auto;
     scroll-snap-align: center;
     background: white;
@@ -187,22 +188,29 @@ main{
     transition: transform 0.3s ease;
   }
   
-  .polaroid:hover {
+.polaroid:hover {
     transform: rotate(0deg) scale(1.05);
   }
   
-  .polaroid img {
+.polaroid img {
     width: 100%;
     height: 300px;
     display: block;
   }
   
-  .caption {
+.caption {
     text-align: center;
     font-weight: bold;
     margin-top: 10px;
   }
 
-    
-    
-  
+
+button{
+    transition: 0.5s;
+}
+
+button:active{
+    opacity: 0.8;
+    transform: scale(0.9);
+  }
+

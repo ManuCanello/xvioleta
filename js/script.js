@@ -25,12 +25,17 @@ const wpp = document.getElementById("enviar");
 wpp.addEventListener("click",mandarWpp.bind(null));
 
 function mandarWpp(){
-  const numero = '543492649064';
+  const numero = '543493443035';
   const mensaje = 'Hola, soy '+document.getElementById("nombre").value + ' y confirmo mi asistencia para el 15 de Violeta';
   const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
   window.open(url, '_blank');
 }
 
+const ubi = document.getElementById("ubicacion");
+ubi.addEventListener("click",ubicacion.bind(null));
 
+function ubicacion(){
+  window.open("https://maps.app.goo.gl/qpeN9kW7Y8dLRhjo8",'_blank');
+}
 
 

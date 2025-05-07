@@ -89,6 +89,7 @@ main{
     margin-bottom: 25px;
     background-image: url("/resources/Club.jpeg");
     background-size:cover;
+    background-repeat: no-repeat;
 }
 
 .confirmacion{

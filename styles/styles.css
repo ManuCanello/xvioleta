@@ -29,20 +29,20 @@ main{
     background-color: black;
 }
 
-.tarjeta{
+.fondo {
     position: relative;
     height: 100vh;
     overflow: hidden;
+    
 }
 
-.fondo{
+.imagenFondo {
+    position: absolute;
     top: 0;
-    position: relative;
+    right: -40%;
     height: 100%;
-    background-image: url("/resources/img2.jpeg"); 
-    background-size:cover;
-    background-position: 10% center;
-    background-attachment: fixed;
+    object-fit: cover;
+    z-index: 0;
 }
 
 .overlay {
@@ -55,7 +55,7 @@ main{
     z-index: 1;
 }
 
-.textoTarjeta{
+.textoTarjeta {
     position: relative;
     z-index: 2;
     color: white;

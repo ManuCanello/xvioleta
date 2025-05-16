@@ -1,17 +1,24 @@
-html, body,main{
+html, body{
     overflow-x: hidden;
     width: 100%;
-  }
+}
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body{
     width: 100vw;
     margin-top: 0;
     margin-left: 0;
     display: flex;
+    background-color: black;
     flex-direction: column;
     font-family: 'Fredoka';
-    background-color: black;
+    z-index: 1;
+    
 }
 
 section{
@@ -24,33 +31,61 @@ main{
 
 .tarjeta{
     position: relative;
-    height: 75vh;   
-    width: 100%;
+    height: 100vh;
     overflow: hidden;
-    touch-action: none;
 }
 
+.fondo{
+    top: 0;
+    position: relative;
+    height: 100%;
+    background-image: url("/resources/img2.jpeg"); 
+    background-size: cover;
+    
+    background-attachment: fixed;
+}
 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
 
-.imagen{
-    height: 100vh;
-    background-color: black;
+.textoTarjeta{
+    position: relative;
+    z-index: 2;
     color: white;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
     display: flex;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    pointer-events: none;
+    flex-direction: column;
+}
+
+#misXV{
+    font-size: 30px;
+}
+
+#violeta{
+    font-size: 100px;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+
 }
 
 .ubicacion{
-    height: 10
-    0vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #e5e4e2;
-    margin-bottom: 40px;
+    margin-top: 50px;
 }
 
 .ubicacion button{
@@ -100,7 +135,7 @@ main{
     align-items: center;
     justify-content: center;
     color: #e5e4e2;
-    height: 80vh;
+    height: 50vh;
 }
 
 .con{
@@ -135,6 +170,7 @@ main{
 }
 
 .faltan{
+    margin-top: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -174,11 +210,13 @@ main{
     padding: 20px;
     width: 90%;
     max-width: 800px;
-  }
-  
+    margin-bottom: 40px;
+}
+
+
 .carousel::-webkit-scrollbar {
     display: none;
-  }
+}
   
 .polaroid {
     flex: 0 0 auto;
@@ -188,7 +226,6 @@ main{
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     padding: 10px;
     width: 250px;
-    
     transition: transform 0.3s ease;
   }
   

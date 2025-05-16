@@ -9,16 +9,22 @@ html, body{
     box-sizing: border-box;
 }
 
+section:not(.tarjeta) {
+    background-color: black;
+
+}
 body{
     width: 100vw;
     margin-top: 0;
     margin-left: 0;
     display: flex;
-    background-color: black;
     flex-direction: column;
     font-family: 'Fredoka';
     z-index: 1;
-    
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow-x: hidden;
 }
 
 section{
@@ -37,22 +43,23 @@ main{
 }
 
 .imagenFondo {
-    position: absolute;
+    position: fixed;
     top: 0;
-    right: -40%;
+    width: 140%;
     height: 100%;
     object-fit: cover;
-    z-index: 0;
+    z-index: -2;
 }
 
 .overlay {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.4);
-    z-index: 1;
+    z-index: -1;
+    
 }
 
 .textoTarjeta {
@@ -208,8 +215,6 @@ main{
     -webkit-overflow-scrolling: touch;
     gap: 20px;
     padding: 20px;
-    width: 90%;
-    max-width: 800px;
     margin-bottom: 0px;
 }
 

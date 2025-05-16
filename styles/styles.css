@@ -40,8 +40,8 @@ main{
     position: relative;
     height: 100%;
     background-image: url("/resources/img2.jpeg"); 
-    background-size: cover;
-    
+    background-size:cover;
+    background-position: 10% center;
     background-attachment: fixed;
 }
 
@@ -80,7 +80,7 @@ main{
 }
 
 .ubicacion{
-    height: 70vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -129,13 +129,13 @@ main{
 }
 
 .confirmacion{
-    margin-top: 15px;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: #e5e4e2;
-    height: 50vh;
+    height: 80vh;
 }
 
 .con{
@@ -210,7 +210,7 @@ main{
     padding: 20px;
     width: 90%;
     max-width: 800px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 
 
